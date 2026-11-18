@@ -1,0 +1,35 @@
+You are inspecting ONE object in a traffic image.
+The target is the vehicle inside the RED RECTANGLE. Other vehicles are only context.
+
+Answer ONLY about the target. Do NOT say whether the target is cut by the edge of
+this picture (that is checked elsewhere). Do not estimate distance. Do not judge
+any detector. Do not invent things you cannot see.
+
+Fields:
+- "class_guess": one of "car", "motorcycle", "bus", "truck", "bicycle", "other".
+- "occluded": "yes" if another object (vehicle, person, pole, tree, sign, barrier...)
+  hides part of the target; "no" if no part of the target is hidden by another
+  object; "uncertain" if you cannot tell.
+- "occluder": name of the object hiding the target (e.g. "silver motorcycle"), or null.
+- "visible_parts": up to 5 specific parts you can see (wheel, headlight, mirror...).
+- "hidden_parts": up to 5 specific parts hidden by another object. Empty list if none.
+- "lighting": "bright", "dim", "dark" or "unknown", judged from the target itself.
+- "evidence": ONE concrete sentence: which part is hidden by which object, or why
+  nothing is hidden. Never use "clearly visible", "obviously", "easily visible".
+- "uncertainty": short text, or empty string.
+
+Consistency rules:
+- If "occluded" is "no": "occluder" must be null and "hidden_parts" must be [].
+- If "occluded" is "yes": "occluder" must name an object.
+
+Return valid JSON only, no other text:
+{
+  "class_guess": "",
+  "occluded": "yes | no | uncertain",
+  "occluder": null,
+  "visible_parts": [],
+  "hidden_parts": [],
+  "lighting": "bright | dim | dark | unknown",
+  "evidence": "",
+  "uncertainty": ""
+}

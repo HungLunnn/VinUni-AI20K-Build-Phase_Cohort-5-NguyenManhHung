@@ -30,5 +30,7 @@
     "traffic_density": "high",
     "lighting": "bright",
     "weather": "clear"
-  }
+  },
+  "complete": false,
+  "_note": "GT thủ công, CHƯA đầy đủ: ảnh còn nhiều xe máy ở nền bên phải. Ảnh crop_test.jpg là góc (0,0,1000,1000) của test2.jpg nên chiếc taxi bị cắt nhân tạo bởi cạnh crop; ở ảnh gốc taxi nằm trọn trong khung hình. Không dùng 'truncated' của ca này để kết luận về VLM."
 }

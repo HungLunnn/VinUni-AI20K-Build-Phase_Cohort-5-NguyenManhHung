@@ -1,0 +1,1265 @@
+{
+  "note": "Lấy mẫu từ data/bdd100k/val/bdd100k_labels_images_val.json, seed=0",
+  "cases": [
+    {
+      "id": "c25f97e6-1827a77f_185890",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c25f97e6-1827a77f.jpg",
+      "bbox": [
+        490.758622,
+        211.174264,
+        547.670835,
+        262.095718
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:snowy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c45d3e0a-75c44167_207637",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c45d3e0a-75c44167.jpg",
+      "bbox": [
+        993.727755,
+        257.294293,
+        1260.551467,
+        419.294404
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:overcast"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c0591ae4-6214d10f_160275",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c0591ae4-6214d10f.jpg",
+      "bbox": [
+        319.139889,
+        424.709859,
+        370.439872,
+        471.959842
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c0c183ff-1b24f541_165743",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c0c183ff-1b24f541.jpg",
+      "bbox": [
+        825.069186,
+        382.664182,
+        886.424625,
+        427.873453
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bab692c9-ce1abc2d_97217",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bab692c9-ce1abc2d.jpg",
+      "bbox": [
+        1103.815267,
+        395.093846,
+        1278.635553,
+        536.698274
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": true,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bae9f15e-4c858350_99050",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bae9f15e-4c858350.jpg",
+      "bbox": [
+        428.41165,
+        318.07951,
+        539.82021,
+        403.654201
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c94ceb93-5b8608c4_265728",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c94ceb93-5b8608c4.jpg",
+      "bbox": [
+        733.407536,
+        334.382123,
+        897.9541,
+        476.597366
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c4b610ae-4b915923_211948",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c4b610ae-4b915923.jpg",
+      "bbox": [
+        839.738471,
+        366.839689,
+        1003.194249,
+        495.358355
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b9c067bf-9bc4ccd1_87540",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b9c067bf-9bc4ccd1.jpg",
+      "bbox": [
+        520.308847,
+        318.922139,
+        579.747743,
+        381.857442
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c83c10de-e0aee9ee_253266",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c83c10de-e0aee9ee.jpg",
+      "bbox": [
+        593.041369,
+        91.704129,
+        682.189289,
+        162.639033
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c2bd70f5-009e856e_189001",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c2bd70f5-009e856e.jpg",
+      "bbox": [
+        7.623535,
+        272.541362,
+        60.988277,
+        320.188454
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:undefined"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b4946e87-fe31271f_30974",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b4946e87-fe31271f.jpg",
+      "bbox": [
+        874.764222,
+        190.919297,
+        1039.06743,
+        318.36945
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b738d22a-6ac5e1d6_61507",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b738d22a-6ac5e1d6.jpg",
+      "bbox": [
+        776.718735,
+        358.163425,
+        823.00447,
+        407.755285
+      ],
+      "gt": {
+        "class": "truck",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "truck",
+        "weather:snowy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b2794401-ba7d3c05_8956",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b2794401-ba7d3c05.jpg",
+      "bbox": [
+        0,
+        395.186706,
+        55.884989,
+        444.086071
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": true,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:overcast"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ca55fb23-6aec0f71_278045",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/ca55fb23-6aec0f71.jpg",
+      "bbox": [
+        1.397853,
+        433.246953,
+        100.245293,
+        498.046938
+      ],
+      "gt": {
+        "class": "motor",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "motor",
+        "weather:undefined"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c359e7b1-5b68aea4_196225",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c359e7b1-5b68aea4.jpg",
+      "bbox": [
+        1005.689759,
+        329.407067,
+        1096.775805,
+        370.582951
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dim"
+      },
+      "tags": [
+        "car",
+        "weather:rainy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b99c5931-81b850be_86519",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b99c5931-81b850be.jpg",
+      "bbox": [
+        235.1373,
+        253.109578,
+        369.929383,
+        327.994067
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:snowy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c33a646b-70d40dc3_195215",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c33a646b-70d40dc3.jpg",
+      "bbox": [
+        256.430521,
+        309.148661,
+        308.098259,
+        376.962567
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c8c97803-ddd12fbf_259352",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c8c97803-ddd12fbf.jpg",
+      "bbox": [
+        1226.542224,
+        304.451986,
+        1273.956877,
+        346.875624
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:snowy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b4f4bd95-70f45b0f_35593",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b4f4bd95-70f45b0f.jpg",
+      "bbox": [
+        53.864009,
+        343.995142,
+        175.058027,
+        401.531698
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c7426098-2eeb9015_242236",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c7426098-2eeb9015.jpg",
+      "bbox": [
+        229.586744,
+        321.920542,
+        336.893592,
+        389.299261
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bf24495d-c9787981_148336",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bf24495d-c9787981.jpg",
+      "bbox": [
+        292.169325,
+        381.712233,
+        334.356796,
+        423.899704
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dim"
+      },
+      "tags": [
+        "car",
+        "weather:overcast"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b2bc4efb-a184131d_11319",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b2bc4efb-a184131d.jpg",
+      "bbox": [
+        501.597125,
+        365.591935,
+        568.975843,
+        430.475145
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c96ab7ea-f0802092_267307",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c96ab7ea-f0802092.jpg",
+      "bbox": [
+        746.654543,
+        314.74279,
+        807.487184,
+        355.738698
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b401b6fa-a9a7f11d_24404",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b401b6fa-a9a7f11d.jpg",
+      "bbox": [
+        523.067697,
+        326.745701,
+        591.162601,
+        388.250774
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:overcast"
+      ],
+      "verified": true
+    },
+    {
+      "id": "baeab53a-cefd6619_99145",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/baeab53a-cefd6619.jpg",
+      "bbox": [
+        688.963397,
+        187.848208,
+        735.029717,
+        240.056706
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bdd42bec-c050a953_132991",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bdd42bec-c050a953.jpg",
+      "bbox": [
+        578.513164,
+        310.412943,
+        649.061562,
+        385.664566
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:undefined"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b29f9214-4846c10c_10578",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b29f9214-4846c10c.jpg",
+      "bbox": [
+        362.164749,
+        344.903269,
+        471.906698,
+        432.696829
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:snowy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c1ba5ee6-d7c173ea_178723",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c1ba5ee6-d7c173ea.jpg",
+      "bbox": [
+        31.154191,
+        453.782729,
+        190.950179,
+        526.517455
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bb425c3f-4e35dc9d_103112",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bb425c3f-4e35dc9d.jpg",
+      "bbox": [
+        658.763655,
+        342.298762,
+        721.733712,
+        382.664182
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:snowy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c07733d0-9738eec9_162284",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c07733d0-9738eec9.jpg",
+      "bbox": [
+        678.778199,
+        293.2222,
+        788.580555,
+        378.069475
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:overcast"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bcf8b229-8bcd6901_123470",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bcf8b229-8bcd6901.jpg",
+      "bbox": [
+        492.340131,
+        361.857134,
+        559.336728,
+        421.165597
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:rainy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bbdb533c-9863d46e_110405",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bbdb533c-9863d46e.jpg",
+      "bbox": [
+        350.215959,
+        288.855061,
+        471.962968,
+        375.158047
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b8ce5e42-34aa3275_79014",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b8ce5e42-34aa3275.jpg",
+      "bbox": [
+        662.247681,
+        270.723925,
+        736.640426,
+        319.66652
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b97124d9-bea19450_84747",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b97124d9-bea19450.jpg",
+      "bbox": [
+        267.061339,
+        334.285863,
+        365.143014,
+        384.979763
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:rainy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c968f598-7b3b4c6d_267103",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c968f598-7b3b4c6d.jpg",
+      "bbox": [
+        380.299257,
+        287.048321,
+        517.583234,
+        399.371578
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bc3edef9-bc5df407_115023",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bc3edef9-bc5df407.jpg",
+      "bbox": [
+        763.258495,
+        252.292028,
+        1026.81356,
+        398.711509
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:undefined"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bf6789ed-4089397b_150802",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bf6789ed-4089397b.jpg",
+      "bbox": [
+        221.684313,
+        378.748104,
+        338.809022,
+        440.676112
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dim"
+      },
+      "tags": [
+        "car",
+        "weather:overcast"
+      ],
+      "verified": true
+    },
+    {
+      "id": "fe1d9184-d144106a_279100",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/fe1d9184-d144106a.jpg",
+      "bbox": [
+        1104.726473,
+        358.262695,
+        1181.568332,
+        555.856048
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": true,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b8b03ee1-9444cbd8_77652",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b8b03ee1-9444cbd8.jpg",
+      "bbox": [
+        561.056387,
+        392.662237,
+        724.558368,
+        538.140378
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dim"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b54eb6de-06e04487_40094",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b54eb6de-06e04487.jpg",
+      "bbox": [
+        809.417918,
+        353.719715,
+        865.360409,
+        399.172989
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bb5cc516-c98d1fbe_103983",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bb5cc516-c98d1fbe.jpg",
+      "bbox": [
+        859.812071,
+        218.991797,
+        1103.485318,
+        345.540331
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:rainy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b25ae6c0-311e72c2_7022",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b25ae6c0-311e72c2.jpg",
+      "bbox": [
+        0,
+        293.547203,
+        412.878752,
+        510.712225
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": true,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:undefined"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c8af3e03-11a30ece_257640",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c8af3e03-11a30ece.jpg",
+      "bbox": [
+        128.760685,
+        269.857896,
+        314.208053,
+        383.684212
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b8c21306-2ef89045_78604",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b8c21306-2ef89045.jpg",
+      "bbox": [
+        223.483527,
+        194.782731,
+        333.694581,
+        282.033148
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:undefined"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c14d8658-f91e67b2_172664",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c14d8658-f91e67b2.jpg",
+      "bbox": [
+        687.044054,
+        319.274775,
+        741.044017,
+        368.212242
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:partly cloudy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c154b889-9f8ad734_173119",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c154b889-9f8ad734.jpg",
+      "bbox": [
+        206.303649,
+        285.524251,
+        429.111591,
+        409.30644
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:rainy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c36c60e8-ad8ad874_196784",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c36c60e8-ad8ad874.jpg",
+      "bbox": [
+        610.806397,
+        331.438923,
+        658.194173,
+        374.418534
+      ],
+      "gt": {
+        "class": "truck",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "truck",
+        "weather:rainy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b406dc5a-44d22755_24589",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b406dc5a-44d22755.jpg",
+      "bbox": [
+        344.08213,
+        449.765524,
+        400.159034,
+        490.025863
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:snowy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bcaf73c1-311f299e_119889",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bcaf73c1-311f299e.jpg",
+      "bbox": [
+        616.306751,
+        338.672758,
+        794.177318,
+        481.508212
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b9117002-548fd684_81287",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b9117002-548fd684.jpg",
+      "bbox": [
+        0,
+        301.472808,
+        81.097949,
+        446.038717
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": true,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c492c534-2d7821c2_210226",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c492c534-2d7821c2.jpg",
+      "bbox": [
+        1154.333051,
+        237.949964,
+        1278.301731,
+        639.206579
+      ],
+      "gt": {
+        "class": "truck",
+        "occluded": false,
+        "truncated": true,
+        "lighting": "bright"
+      },
+      "tags": [
+        "truck",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c37360b7-718f9bba_197089",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c37360b7-718f9bba.jpg",
+      "bbox": [
+        735.351366,
+        374.539509,
+        847.631263,
+        446.660902
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:undefined"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bd656105-efa0deab_128234",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bd656105-efa0deab.jpg",
+      "bbox": [
+        361.222387,
+        341.648776,
+        432.898703,
+        394.094861
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c3cae07c-b1c025cf_201474",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c3cae07c-b1c025cf.jpg",
+      "bbox": [
+        683.044752,
+        271.763208,
+        750.489635,
+        329.950948
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b5661732-3684230b_41139",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b5661732-3684230b.jpg",
+      "bbox": [
+        763.504487,
+        347.981852,
+        1017.516556,
+        521.238636
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:overcast"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bda20cf9-258f2c93_130397",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/bda20cf9-258f2c93.jpg",
+      "bbox": [
+        0,
+        370.46071,
+        156.498244,
+        493.336292
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": true,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:partly cloudy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b5a4db41-1b4f91b0_44445",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b5a4db41-1b4f91b0.jpg",
+      "bbox": [
+        756.96173,
+        385.641132,
+        811.858701,
+        426.006551
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:rainy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "b3433dec-e7a93351_16750",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/b3433dec-e7a93351.jpg",
+      "bbox": [
+        548.683556,
+        337.5214,
+        603.290255,
+        384.327142
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dark"
+      },
+      "tags": [
+        "car",
+        "weather:clear"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c976aa56-2902a314_268064",
+      "image": "../data/bdd100k/val/bdd100k/images/100k/val/c976aa56-2902a314.jpg",
+      "bbox": [
+        956.841223,
+        310.775443,
+        1278.196256,
+        651.967207
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": true,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "weather:undefined"
+      ],
+      "verified": true
+    }
+  ]
+}

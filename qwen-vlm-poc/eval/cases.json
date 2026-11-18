@@ -1,0 +1,158 @@
+{
+  "note": "Bản nháp do máy ước lượng bbox và nhãn bằng mắt. verified=false cho tới khi một người xem ảnh overlay (python tools/draw_boxes.py) và xác nhận. Khi có BDD100K thật, thay bằng nhãn từ dataset.",
+  "cases": [
+    {
+      "id": "c01_taxi",
+      "image": "images/test2.jpg",
+      "bbox": [
+        781,
+        600,
+        1237,
+        1017
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "unoccluded",
+        "large"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c02_car_behind_taxi",
+      "image": "images/test2.jpg",
+      "bbox": [
+        1138,
+        607,
+        1272,
+        766
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "occluded",
+        "medium"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c03_suv_right_edge",
+      "image": "images/test2.jpg",
+      "bbox": [
+        1832,
+        565,
+        2000,
+        698
+      ],
+      "gt": {
+        "class": "car",
+        "truncated": true,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "truncated"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c04_motor_left",
+      "image": "images/test2.jpg",
+      "bbox": [
+        8,
+        652,
+        243,
+        1070
+      ],
+      "gt": {
+        "class": "motorcycle",
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "motorcycle",
+        "dense",
+        "large"
+      ],
+      "verified": false,
+      "note": "Không gán occluded: xe nằm sát xe bên cạnh, cần người kiểm tra"
+    },
+    {
+      "id": "c05_far_small_car",
+      "image": "images/test2.jpg",
+      "bbox": [
+        1715,
+        584,
+        1803,
+        645
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "tags": [
+        "car",
+        "small",
+        "far"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c06_rain_car_hidden",
+      "image": "images/test.jpg",
+      "bbox": [
+        150,
+        222,
+        605,
+        372
+      ],
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dim"
+      },
+      "tags": [
+        "car",
+        "occluded",
+        "rain",
+        "overcast"
+      ],
+      "verified": true
+    },
+    {
+      "id": "c07_rain_motor",
+      "image": "images/test.jpg",
+      "bbox": [
+        215,
+        175,
+        340,
+        462
+      ],
+      "gt": {
+        "class": "motorcycle",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dim"
+      },
+      "tags": [
+        "motorcycle",
+        "rain",
+        "overcast"
+      ],
+      "verified": true
+    }
+  ]
+}
