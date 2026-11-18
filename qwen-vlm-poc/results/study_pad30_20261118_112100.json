@@ -1,0 +1,1317 @@
+{
+  "config": {
+    "pad_ratio": 0.3,
+    "mark": "box",
+    "temperature": 0.2,
+    "max_tokens": 1200,
+    "repeats": 3,
+    "model": "Qwen2.5-VL-7B-Instruct",
+    "mode": "live",
+    "prompt_file": "prompts/object_probe_v1.txt",
+    "cases_file": "eval/cases.json"
+  },
+  "cases": [
+    {
+      "id": "c01_taxi",
+      "image": "images/test2.jpg",
+      "bbox": [
+        781,
+        600,
+        1237,
+        1017
+      ],
+      "tags": [
+        "car",
+        "unoccluded",
+        "large"
+      ],
+      "verified": true,
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "geometry": {
+        "image_size": [
+          2000,
+          1360
+        ],
+        "truncated_edges": [],
+        "truncated_by_geometry": false
+      },
+      "calls": [
+        {
+          "crop_box": [
+            644.0,
+            474.0,
+            1374.0,
+            1142.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"car\",\n  \"occluded\": \"no\",\n  \"occluder\": null,\n  \"visible_parts\": [\"grille\", \"headlight\", \"license plate\", \"front bumper\", \"windshield\"],\n  \"hidden_parts\": [],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The car is fully visible with no parts obscured.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.8891108999960124,
+          "usage": {
+            "completion_tokens": 92,
+            "prompt_tokens": 1077,
+            "prompt_tokens_details": null,
+            "total_tokens": 1169
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "no",
+            "occluder": null,
+            "visible_parts": [
+              "grille",
+              "headlight",
+              "license plate",
+              "front bumper",
+              "windshield"
+            ],
+            "hidden_parts": [],
+            "lighting": "bright",
+            "evidence": "The car is fully visible with no parts obscured.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 1,
+          "scores": {
+            "occluded_pred": "no",
+            "occluded_match": true,
+            "class_match": true,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            644.0,
+            474.0,
+            1374.0,
+            1142.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"car\",\n  \"occluded\": \"no\",\n  \"occluder\": null,\n  \"visible_parts\": [\"grille\", \"headlight\", \"license plate\", \"front bumper\", \"windshield\"],\n  \"hidden_parts\": [],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The car's front is fully visible with no parts obscured.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.8826301000081003,
+          "usage": {
+            "completion_tokens": 94,
+            "prompt_tokens": 1077,
+            "prompt_tokens_details": null,
+            "total_tokens": 1171
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "no",
+            "occluder": null,
+            "visible_parts": [
+              "grille",
+              "headlight",
+              "license plate",
+              "front bumper",
+              "windshield"
+            ],
+            "hidden_parts": [],
+            "lighting": "bright",
+            "evidence": "The car's front is fully visible with no parts obscured.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 2,
+          "scores": {
+            "occluded_pred": "no",
+            "occluded_match": true,
+            "class_match": true,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            644.0,
+            474.0,
+            1374.0,
+            1142.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"car\",\n  \"occluded\": \"no\",\n  \"occluder\": null,\n  \"visible_parts\": [\"grille\", \"headlight\", \"license plate\", \"front bumper\", \"windshield\"],\n  \"hidden_parts\": [],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The car's front is fully visible with all parts clearly seen.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.8820758999790996,
+          "usage": {
+            "completion_tokens": 95,
+            "prompt_tokens": 1077,
+            "prompt_tokens_details": null,
+            "total_tokens": 1172
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": false,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "no",
+            "occluder": null,
+            "visible_parts": [
+              "grille",
+              "headlight",
+              "license plate",
+              "front bumper",
+              "windshield"
+            ],
+            "hidden_parts": [],
+            "lighting": "bright",
+            "evidence": "The car's front is fully visible with all parts clearly seen.",
+            "uncertainty": ""
+          },
+          "schema_errors": [
+            "evidence dùng cụm chung chung bị cấm"
+          ],
+          "error": null,
+          "repeat": 3,
+          "scores": {
+            "occluded_pred": "no",
+            "occluded_match": true,
+            "class_match": true,
+            "lighting_match": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "c02_car_behind_taxi",
+      "image": "images/test2.jpg",
+      "bbox": [
+        1138,
+        607,
+        1272,
+        766
+      ],
+      "tags": [
+        "car",
+        "occluded",
+        "medium"
+      ],
+      "verified": true,
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "geometry": {
+        "image_size": [
+          2000,
+          1360
+        ],
+        "truncated_edges": [],
+        "truncated_by_geometry": false
+      },
+      "calls": [
+        {
+          "crop_box": [
+            1093.0,
+            559.0,
+            1317.0,
+            814.0
+          ],
+          "raw_text": "{\n  \"class_guess\": \"car\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"silver car\",\n  \"visible_parts\": [\"front bumper\", \"headlight\", \"windshield\"],\n  \"hidden_parts\": [\"side mirror\", \"rear wheel\", \"rear bumper\"],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The side mirror and rear wheel are obscured by the silver car in front.\",\n  \"uncertainty\": \"\"\n}",
+          "latency_s": 0.8007941999821924,
+          "usage": {
+            "completion_tokens": 98,
+            "prompt_tokens": 525,
+            "prompt_tokens_details": null,
+            "total_tokens": 623
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "yes",
+            "occluder": "silver car",
+            "visible_parts": [
+              "front bumper",
+              "headlight",
+              "windshield"
+            ],
+            "hidden_parts": [
+              "side mirror",
+              "rear wheel",
+              "rear bumper"
+            ],
+            "lighting": "bright",
+            "evidence": "The side mirror and rear wheel are obscured by the silver car in front.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 1,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": true,
+            "class_match": true,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            1093.0,
+            559.0,
+            1317.0,
+            814.0
+          ],
+          "raw_text": "{\n  \"class_guess\": \"car\",\n  \"occluded\": \"no\",\n  \"occluder\": null,\n  \"visible_parts\": [\"front bumper\", \"headlight\", \"side mirror\", \"license plate\", \"front window\"],\n  \"hidden_parts\": [],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The car's front bumper, headlight, side mirror, license plate, and front window are clearly visible.\",\n  \"uncertainty\": \"\"\n}",
+          "latency_s": 0.8041195999830961,
+          "usage": {
+            "completion_tokens": 100,
+            "prompt_tokens": 525,
+            "prompt_tokens_details": null,
+            "total_tokens": 625
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": false,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "no",
+            "occluder": null,
+            "visible_parts": [
+              "front bumper",
+              "headlight",
+              "side mirror",
+              "license plate",
+              "front window"
+            ],
+            "hidden_parts": [],
+            "lighting": "bright",
+            "evidence": "The car's front bumper, headlight, side mirror, license plate, and front window are clearly visible.",
+            "uncertainty": ""
+          },
+          "schema_errors": [
+            "evidence dùng cụm chung chung bị cấm"
+          ],
+          "error": null,
+          "repeat": 2,
+          "scores": {
+            "occluded_pred": "no",
+            "occluded_match": false,
+            "class_match": true,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            1093.0,
+            559.0,
+            1317.0,
+            814.0
+          ],
+          "raw_text": "{\n  \"class_guess\": \"car\",\n  \"occluded\": \"no\",\n  \"occluder\": null,\n  \"visible_parts\": [\"front bumper\", \"headlight\", \"windshield\", \"side mirror\", \"license plate\"],\n  \"hidden_parts\": [],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The car's front bumper, headlight, windshield, side mirror, and license plate are all clearly visible.\",\n  \"uncertainty\": \"\"\n}",
+          "latency_s": 0.8977866999921389,
+          "usage": {
+            "completion_tokens": 100,
+            "prompt_tokens": 525,
+            "prompt_tokens_details": null,
+            "total_tokens": 625
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": false,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "no",
+            "occluder": null,
+            "visible_parts": [
+              "front bumper",
+              "headlight",
+              "windshield",
+              "side mirror",
+              "license plate"
+            ],
+            "hidden_parts": [],
+            "lighting": "bright",
+            "evidence": "The car's front bumper, headlight, windshield, side mirror, and license plate are all clearly visible.",
+            "uncertainty": ""
+          },
+          "schema_errors": [
+            "evidence dùng cụm chung chung bị cấm"
+          ],
+          "error": null,
+          "repeat": 3,
+          "scores": {
+            "occluded_pred": "no",
+            "occluded_match": false,
+            "class_match": true,
+            "lighting_match": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "c03_suv_right_edge",
+      "image": "images/test2.jpg",
+      "bbox": [
+        1832,
+        565,
+        2000,
+        698
+      ],
+      "tags": [
+        "car",
+        "truncated"
+      ],
+      "verified": true,
+      "gt": {
+        "class": "car",
+        "truncated": true,
+        "lighting": "bright"
+      },
+      "geometry": {
+        "image_size": [
+          2000,
+          1360
+        ],
+        "truncated_edges": [
+          "right"
+        ],
+        "truncated_by_geometry": true
+      },
+      "calls": [
+        {
+          "crop_box": [
+            1776.0,
+            519.0,
+            2000.0,
+            744.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"car\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"red bollard\",\n  \"visible_parts\": [\"rear tire\", \"license plate\", \"tail light\"],\n  \"hidden_parts\": [\"front tire\", \"front bumper\", \"front headlight\"],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The front tire and bumper are obscured by the red bollard.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.8442819999763742,
+          "usage": {
+            "completion_tokens": 104,
+            "prompt_tokens": 517,
+            "prompt_tokens_details": null,
+            "total_tokens": 621
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "yes",
+            "occluder": "red bollard",
+            "visible_parts": [
+              "rear tire",
+              "license plate",
+              "tail light"
+            ],
+            "hidden_parts": [
+              "front tire",
+              "front bumper",
+              "front headlight"
+            ],
+            "lighting": "bright",
+            "evidence": "The front tire and bumper are obscured by the red bollard.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 1,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": null,
+            "class_match": true,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            1776.0,
+            519.0,
+            2000.0,
+            744.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"car\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"red bollard\",\n  \"visible_parts\": [\"rear bumper\", \"license plate\", \"tail light\"],\n  \"hidden_parts\": [\"rear wheel\", \"side mirror\"],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The rear wheel and side mirror are obscured by the red bollard.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.8146201000199653,
+          "usage": {
+            "completion_tokens": 100,
+            "prompt_tokens": 517,
+            "prompt_tokens_details": null,
+            "total_tokens": 617
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "yes",
+            "occluder": "red bollard",
+            "visible_parts": [
+              "rear bumper",
+              "license plate",
+              "tail light"
+            ],
+            "hidden_parts": [
+              "rear wheel",
+              "side mirror"
+            ],
+            "lighting": "bright",
+            "evidence": "The rear wheel and side mirror are obscured by the red bollard.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 2,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": null,
+            "class_match": true,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            1776.0,
+            519.0,
+            2000.0,
+            744.0
+          ],
+          "raw_text": "{\n  \"class_guess\": \"car\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"red bollard\",\n  \"visible_parts\": [\"rear bumper\", \"license plate\", \"tail light\"],\n  \"hidden_parts\": [\"rear wheel\", \"side mirror\"],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The rear wheel and side mirror are obscured by the red bollard.\",\n  \"uncertainty\": \"\"\n}",
+          "latency_s": 0.775660399987828,
+          "usage": {
+            "completion_tokens": 96,
+            "prompt_tokens": 517,
+            "prompt_tokens_details": null,
+            "total_tokens": 613
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "yes",
+            "occluder": "red bollard",
+            "visible_parts": [
+              "rear bumper",
+              "license plate",
+              "tail light"
+            ],
+            "hidden_parts": [
+              "rear wheel",
+              "side mirror"
+            ],
+            "lighting": "bright",
+            "evidence": "The rear wheel and side mirror are obscured by the red bollard.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 3,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": null,
+            "class_match": true,
+            "lighting_match": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "c04_motor_left",
+      "image": "images/test2.jpg",
+      "bbox": [
+        8,
+        652,
+        243,
+        1070
+      ],
+      "tags": [
+        "motorcycle",
+        "dense",
+        "large"
+      ],
+      "verified": false,
+      "gt": {
+        "class": "motorcycle",
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "geometry": {
+        "image_size": [
+          2000,
+          1360
+        ],
+        "truncated_edges": [],
+        "truncated_by_geometry": false
+      },
+      "calls": [
+        {
+          "crop_box": [
+            0.0,
+            526.0,
+            314.0,
+            1195.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"motorcycle\",\n  \"occluded\": \"no\",\n  \"occluder\": null,\n  \"visible_parts\": [\"seat\", \"handlebars\", \"headlight\", \"front wheel\", \"side mirror\"],\n  \"hidden_parts\": [],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The motorcycle is fully visible with all parts clearly seen.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.8783695999882184,
+          "usage": {
+            "completion_tokens": 93,
+            "prompt_tokens": 717,
+            "prompt_tokens_details": null,
+            "total_tokens": 810
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": false,
+          "parsed": {
+            "class_guess": "motorcycle",
+            "occluded": "no",
+            "occluder": null,
+            "visible_parts": [
+              "seat",
+              "handlebars",
+              "headlight",
+              "front wheel",
+              "side mirror"
+            ],
+            "hidden_parts": [],
+            "lighting": "bright",
+            "evidence": "The motorcycle is fully visible with all parts clearly seen.",
+            "uncertainty": ""
+          },
+          "schema_errors": [
+            "evidence dùng cụm chung chung bị cấm"
+          ],
+          "error": null,
+          "repeat": 1,
+          "scores": {
+            "occluded_pred": "no",
+            "occluded_match": null,
+            "class_match": true,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            0.0,
+            526.0,
+            314.0,
+            1195.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"motorcycle\",\n  \"occluded\": \"no\",\n  \"occluder\": null,\n  \"visible_parts\": [\"seat\", \"handlebars\", \"headlight\", \"front wheel\", \"side mirror\"],\n  \"hidden_parts\": [],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The motorcycle is fully visible with all its parts clearly seen.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.8615605999948457,
+          "usage": {
+            "completion_tokens": 94,
+            "prompt_tokens": 717,
+            "prompt_tokens_details": null,
+            "total_tokens": 811
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": false,
+          "parsed": {
+            "class_guess": "motorcycle",
+            "occluded": "no",
+            "occluder": null,
+            "visible_parts": [
+              "seat",
+              "handlebars",
+              "headlight",
+              "front wheel",
+              "side mirror"
+            ],
+            "hidden_parts": [],
+            "lighting": "bright",
+            "evidence": "The motorcycle is fully visible with all its parts clearly seen.",
+            "uncertainty": ""
+          },
+          "schema_errors": [
+            "evidence dùng cụm chung chung bị cấm"
+          ],
+          "error": null,
+          "repeat": 2,
+          "scores": {
+            "occluded_pred": "no",
+            "occluded_match": null,
+            "class_match": true,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            0.0,
+            526.0,
+            314.0,
+            1195.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"motorcycle\",\n  \"occluded\": \"no\",\n  \"occluder\": null,\n  \"visible_parts\": [\"seat\", \"handlebars\", \"headlight\", \"front wheel\", \"side mirror\"],\n  \"hidden_parts\": [],\n  \"lighting\": \"bright\",\n  \"evidence\": \"The motorcycle is fully visible with all parts clearly seen.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.8293889999622479,
+          "usage": {
+            "completion_tokens": 93,
+            "prompt_tokens": 717,
+            "prompt_tokens_details": null,
+            "total_tokens": 810
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": false,
+          "parsed": {
+            "class_guess": "motorcycle",
+            "occluded": "no",
+            "occluder": null,
+            "visible_parts": [
+              "seat",
+              "handlebars",
+              "headlight",
+              "front wheel",
+              "side mirror"
+            ],
+            "hidden_parts": [],
+            "lighting": "bright",
+            "evidence": "The motorcycle is fully visible with all parts clearly seen.",
+            "uncertainty": ""
+          },
+          "schema_errors": [
+            "evidence dùng cụm chung chung bị cấm"
+          ],
+          "error": null,
+          "repeat": 3,
+          "scores": {
+            "occluded_pred": "no",
+            "occluded_match": null,
+            "class_match": true,
+            "lighting_match": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "c05_far_small_car",
+      "image": "images/test2.jpg",
+      "bbox": [
+        1715,
+        584,
+        1803,
+        645
+      ],
+      "tags": [
+        "car",
+        "small",
+        "far"
+      ],
+      "verified": true,
+      "gt": {
+        "class": "car",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "bright"
+      },
+      "geometry": {
+        "image_size": [
+          2000,
+          1360
+        ],
+        "truncated_edges": [],
+        "truncated_by_geometry": false
+      },
+      "calls": [
+        {
+          "crop_box": [
+            1647.0,
+            502.0,
+            1871.0,
+            726.0
+          ],
+          "raw_text": "{\n  \"class_guess\": \"car\",\n  \"occluded\": \"no\",\n  \"occluder\": null,\n  \"visible_parts\": [\"front wheel\", \"rear wheel\", \"headlight\", \"grille\", \"license plate\"],\n  \"hidden_parts\": [],\n  \"lighting\": \"unknown\",\n  \"evidence\": \"The entire car is visible with no parts obscured.\",\n  \"uncertainty\": \"\"\n}",
+          "latency_s": 0.7387361999717541,
+          "usage": {
+            "completion_tokens": 88,
+            "prompt_tokens": 517,
+            "prompt_tokens_details": null,
+            "total_tokens": 605
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "no",
+            "occluder": null,
+            "visible_parts": [
+              "front wheel",
+              "rear wheel",
+              "headlight",
+              "grille",
+              "license plate"
+            ],
+            "hidden_parts": [],
+            "lighting": "unknown",
+            "evidence": "The entire car is visible with no parts obscured.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 1,
+          "scores": {
+            "occluded_pred": "no",
+            "occluded_match": true,
+            "class_match": true,
+            "lighting_match": false
+          }
+        },
+        {
+          "crop_box": [
+            1647.0,
+            502.0,
+            1871.0,
+            726.0
+          ],
+          "raw_text": "{\n  \"class_guess\": \"car\",\n  \"occluded\": \"no\",\n  \"occluder\": null,\n  \"visible_parts\": [\"front wheel\", \"rear wheel\", \"headlight\", \"grille\", \"license plate\"],\n  \"hidden_parts\": [],\n  \"lighting\": \"unknown\",\n  \"evidence\": \"The car is fully visible with all its parts clearly seen.\",\n  \"uncertainty\": \"\"\n}",
+          "latency_s": 0.7617274000076577,
+          "usage": {
+            "completion_tokens": 90,
+            "prompt_tokens": 517,
+            "prompt_tokens_details": null,
+            "total_tokens": 607
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": false,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "no",
+            "occluder": null,
+            "visible_parts": [
+              "front wheel",
+              "rear wheel",
+              "headlight",
+              "grille",
+              "license plate"
+            ],
+            "hidden_parts": [],
+            "lighting": "unknown",
+            "evidence": "The car is fully visible with all its parts clearly seen.",
+            "uncertainty": ""
+          },
+          "schema_errors": [
+            "evidence dùng cụm chung chung bị cấm"
+          ],
+          "error": null,
+          "repeat": 2,
+          "scores": {
+            "occluded_pred": "no",
+            "occluded_match": true,
+            "class_match": true,
+            "lighting_match": false
+          }
+        },
+        {
+          "crop_box": [
+            1647.0,
+            502.0,
+            1871.0,
+            726.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"car\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"building\",\n  \"visible_parts\": [\"license plate\", \"rear bumper\"],\n  \"hidden_parts\": [\"tail lights\", \"rear wheels\"],\n  \"lighting\": \"dim\",\n  \"evidence\": \"The rear tail lights and rear wheels are obscured by the building.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.7777177999960259,
+          "usage": {
+            "completion_tokens": 91,
+            "prompt_tokens": 517,
+            "prompt_tokens_details": null,
+            "total_tokens": 608
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "car",
+            "occluded": "yes",
+            "occluder": "building",
+            "visible_parts": [
+              "license plate",
+              "rear bumper"
+            ],
+            "hidden_parts": [
+              "tail lights",
+              "rear wheels"
+            ],
+            "lighting": "dim",
+            "evidence": "The rear tail lights and rear wheels are obscured by the building.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 3,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": false,
+            "class_match": true,
+            "lighting_match": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "c06_rain_car_hidden",
+      "image": "images/test.jpg",
+      "bbox": [
+        150,
+        222,
+        605,
+        372
+      ],
+      "tags": [
+        "car",
+        "occluded",
+        "rain",
+        "overcast"
+      ],
+      "verified": true,
+      "gt": {
+        "class": "car",
+        "occluded": true,
+        "truncated": false,
+        "lighting": "dim"
+      },
+      "geometry": {
+        "image_size": [
+          636,
+          482
+        ],
+        "truncated_edges": [],
+        "truncated_by_geometry": false
+      },
+      "calls": [
+        {
+          "crop_box": [
+            13.0,
+            177.0,
+            636.0,
+            417.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"motorcycle\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"silver car\",\n  \"visible_parts\": [\"seat\", \"rearview mirror\", \"taillight\"],\n  \"hidden_parts\": [\"front wheel\", \"front tire\", \"headlight\", \"front fender\", \"front part of the body\"],\n  \"lighting\": \"dim\",\n  \"evidence\": \"The front part of the motorcycle is obscured by the silver car.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 1.0486602999735624,
+          "usage": {
+            "completion_tokens": 114,
+            "prompt_tokens": 651,
+            "prompt_tokens_details": null,
+            "total_tokens": 765
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "motorcycle",
+            "occluded": "yes",
+            "occluder": "silver car",
+            "visible_parts": [
+              "seat",
+              "rearview mirror",
+              "taillight"
+            ],
+            "hidden_parts": [
+              "front wheel",
+              "front tire",
+              "headlight",
+              "front fender",
+              "front part of the body"
+            ],
+            "lighting": "dim",
+            "evidence": "The front part of the motorcycle is obscured by the silver car.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 1,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": true,
+            "class_match": false,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            13.0,
+            177.0,
+            636.0,
+            417.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"motorcycle\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"silver car\",\n  \"visible_parts\": [\"seat\", \"headlight\", \"taillight\"],\n  \"hidden_parts\": [\"handlebars\", \"front wheel\", \"rear wheel\"],\n  \"lighting\": \"dim\",\n  \"evidence\": \"The motorcycle's handlebars and front wheel are obscured by the silver car.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.9233259999891743,
+          "usage": {
+            "completion_tokens": 103,
+            "prompt_tokens": 651,
+            "prompt_tokens_details": null,
+            "total_tokens": 754
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "motorcycle",
+            "occluded": "yes",
+            "occluder": "silver car",
+            "visible_parts": [
+              "seat",
+              "headlight",
+              "taillight"
+            ],
+            "hidden_parts": [
+              "handlebars",
+              "front wheel",
+              "rear wheel"
+            ],
+            "lighting": "dim",
+            "evidence": "The motorcycle's handlebars and front wheel are obscured by the silver car.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 2,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": true,
+            "class_match": false,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            13.0,
+            177.0,
+            636.0,
+            417.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"motorcycle\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"scooter\",\n  \"visible_parts\": [\"seat\", \"taillight\", \"license plate\"],\n  \"hidden_parts\": [\"handlebars\", \"front wheel\", \"front fender\"],\n  \"lighting\": \"dim\",\n  \"evidence\": \"The rear part of the motorcycle is partially obscured by the scooter in front.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.8885972000425681,
+          "usage": {
+            "completion_tokens": 105,
+            "prompt_tokens": 651,
+            "prompt_tokens_details": null,
+            "total_tokens": 756
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "motorcycle",
+            "occluded": "yes",
+            "occluder": "scooter",
+            "visible_parts": [
+              "seat",
+              "taillight",
+              "license plate"
+            ],
+            "hidden_parts": [
+              "handlebars",
+              "front wheel",
+              "front fender"
+            ],
+            "lighting": "dim",
+            "evidence": "The rear part of the motorcycle is partially obscured by the scooter in front.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 3,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": true,
+            "class_match": false,
+            "lighting_match": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "c07_rain_motor",
+      "image": "images/test.jpg",
+      "bbox": [
+        215,
+        175,
+        340,
+        462
+      ],
+      "tags": [
+        "motorcycle",
+        "rain",
+        "overcast"
+      ],
+      "verified": true,
+      "gt": {
+        "class": "motorcycle",
+        "occluded": false,
+        "truncated": false,
+        "lighting": "dim"
+      },
+      "geometry": {
+        "image_size": [
+          636,
+          482
+        ],
+        "truncated_edges": [],
+        "truncated_by_geometry": false
+      },
+      "calls": [
+        {
+          "crop_box": [
+            165.0,
+            88.0,
+            390.0,
+            482.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"motorcycle\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"person\",\n  \"visible_parts\": [\"license plate\", \"tail light\"],\n  \"hidden_parts\": [\"seat\", \"handlebars\", \"front wheel\"],\n  \"lighting\": \"dim\",\n  \"evidence\": \"The seat and handlebars of the motorcycle are obscured by the person in front.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.873894099961035,
+          "usage": {
+            "completion_tokens": 98,
+            "prompt_tokens": 565,
+            "prompt_tokens_details": null,
+            "total_tokens": 663
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "motorcycle",
+            "occluded": "yes",
+            "occluder": "person",
+            "visible_parts": [
+              "license plate",
+              "tail light"
+            ],
+            "hidden_parts": [
+              "seat",
+              "handlebars",
+              "front wheel"
+            ],
+            "lighting": "dim",
+            "evidence": "The seat and handlebars of the motorcycle are obscured by the person in front.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 1,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": false,
+            "class_match": true,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            165.0,
+            88.0,
+            390.0,
+            482.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"motorcycle\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"person\",\n  \"visible_parts\": [\"seat\", \"tail light\", \"license plate\"],\n  \"hidden_parts\": [\"handlebars\", \"front wheel\", \"front fender\"],\n  \"lighting\": \"dim\",\n  \"evidence\": \"The front part of the motorcycle, including the handlebars and front wheel, is obscured by a person standing behind it.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.9012588000041433,
+          "usage": {
+            "completion_tokens": 111,
+            "prompt_tokens": 565,
+            "prompt_tokens_details": null,
+            "total_tokens": 676
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "motorcycle",
+            "occluded": "yes",
+            "occluder": "person",
+            "visible_parts": [
+              "seat",
+              "tail light",
+              "license plate"
+            ],
+            "hidden_parts": [
+              "handlebars",
+              "front wheel",
+              "front fender"
+            ],
+            "lighting": "dim",
+            "evidence": "The front part of the motorcycle, including the handlebars and front wheel, is obscured by a person standing behind it.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 2,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": false,
+            "class_match": true,
+            "lighting_match": true
+          }
+        },
+        {
+          "crop_box": [
+            165.0,
+            88.0,
+            390.0,
+            482.0
+          ],
+          "raw_text": "```json\n{\n  \"class_guess\": \"motorcycle\",\n  \"occluded\": \"yes\",\n  \"occluder\": \"person\",\n  \"visible_parts\": [\"license plate\", \"tail light\", \"seat\", \"rear wheel\"],\n  \"hidden_parts\": [\"front wheel\", \"headlight\", \"mirror\", \"front fender\"],\n  \"lighting\": \"dim\",\n  \"evidence\": \"The front wheel, headlight, mirror, and front fender are obscured by the person in front.\",\n  \"uncertainty\": \"\"\n}\n```",
+          "latency_s": 0.9308344000019133,
+          "usage": {
+            "completion_tokens": 115,
+            "prompt_tokens": 565,
+            "prompt_tokens_details": null,
+            "total_tokens": 680
+          },
+          "attempts": 1,
+          "api_error": null,
+          "parse_ok": true,
+          "schema_ok": true,
+          "parsed": {
+            "class_guess": "motorcycle",
+            "occluded": "yes",
+            "occluder": "person",
+            "visible_parts": [
+              "license plate",
+              "tail light",
+              "seat",
+              "rear wheel"
+            ],
+            "hidden_parts": [
+              "front wheel",
+              "headlight",
+              "mirror",
+              "front fender"
+            ],
+            "lighting": "dim",
+            "evidence": "The front wheel, headlight, mirror, and front fender are obscured by the person in front.",
+            "uncertainty": ""
+          },
+          "schema_errors": [],
+          "error": null,
+          "repeat": 3,
+          "scores": {
+            "occluded_pred": "yes",
+            "occluded_match": false,
+            "class_match": true,
+            "lighting_match": true
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "n_cases": 7,
+    "n_calls": 21,
+    "parse_rate": {
+      "k": 21,
+      "n": 21,
+      "rate": 1.0,
+      "ci95": [
+        0.845,
+        1.0
+      ]
+    },
+    "schema_rate": {
+      "k": 14,
+      "n": 21,
+      "rate": 0.6666666666666666,
+      "ci95": [
+        0.454,
+        0.828
+      ]
+    },
+    "class_accuracy": {
+      "k": 18,
+      "n": 21,
+      "rate": 0.8571428571428571,
+      "ci95": [
+        0.654,
+        0.95
+      ]
+    },
+    "occluded_accuracy_answered": {
+      "k": 9,
+      "n": 15,
+      "rate": 0.6,
+      "ci95": [
+        0.357,
+        0.802
+      ]
+    },
+    "occluded_abstain_rate": {
+      "k": 0,
+      "n": 15,
+      "rate": 0.0,
+      "ci95": [
+        0.0,
+        0.204
+      ]
+    },
+    "occluded_recall": {
+      "k": 4,
+      "n": 6,
+      "rate": 0.6666666666666666,
+      "ci95": [
+        0.3,
+        0.903
+      ]
+    },
+    "occluded_false_alarm": {
+      "k": 4,
+      "n": 9,
+      "rate": 0.4444444444444444,
+      "ci95": [
+        0.189,
+        0.733
+      ]
+    },
+    "lighting_accuracy": {
+      "k": 18,
+      "n": 21,
+      "rate": 0.8571428571428571,
+      "ci95": [
+        0.654,
+        0.95
+      ]
+    },
+    "consistency_across_repeats": {
+      "k": 5,
+      "n": 7,
+      "rate": 0.7142857142857143,
+      "ci95": [
+        0.359,
+        0.918
+      ]
+    },
+    "latency_s": {
+      "mean": 0.86,
+      "median": 0.87
+    },
+    "truncation_rule_vs_gt": {
+      "k": 7,
+      "n": 7,
+      "rate": 1.0,
+      "ci95": [
+        0.646,
+        1.0
+      ]
+    }
+  }
+}
