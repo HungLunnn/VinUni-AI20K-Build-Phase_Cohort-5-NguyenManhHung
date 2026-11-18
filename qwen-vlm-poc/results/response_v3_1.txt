@@ -1,0 +1,136 @@
+{
+  "vehicles": [
+    {
+      "object_id": "V1",
+      "class": "motorcycle",
+      "position": "left foreground",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": [
+        "front wheel",
+        "handlebar",
+        "rider helmet"
+      ],
+      "hidden_parts": [],
+      "truncated_edges": [],
+      "evidence": "Motorcycle at left foreground; front wheel and handlebar visible; rider helmet worn by rider.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V2",
+      "class": "motorcycle",
+      "position": "center foreground",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": [
+        "front wheel",
+        "handlebar",
+        "rider helmet"
+      ],
+      "hidden_parts": [],
+      "truncated_edges": [],
+      "evidence": "Motorcycle at center foreground; front wheel and handlebar visible; rider helmet worn by rider.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V3",
+      "class": "motorcycle",
+      "position": "right foreground",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": [
+        "front wheel",
+        "handlebar",
+        "rider helmet"
+      ],
+      "hidden_parts": [],
+      "truncated_edges": [],
+      "evidence": "Motorcycle at right foreground; front wheel and handlebar visible; rider helmet worn by rider.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V4",
+      "class": "motorcycle",
+      "position": "left background",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": [
+        "front wheel",
+        "handlebar",
+        "rider helmet"
+      ],
+      "hidden_parts": [],
+      "truncated_edges": [],
+      "evidence": "Motorcycle at left background; front wheel and handlebar visible; rider helmet worn by rider.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V5",
+      "class": "motorcycle",
+      "position": "center background",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": [
+        "front wheel",
+        "handlebar",
+        "rider helmet"
+      ],
+      "hidden_parts": [],
+      "truncated_edges": [],
+      "evidence": "Motorcycle at center background; front wheel and handlebar visible; rider helmet worn by rider.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V6",
+      "class": "motorcycle",
+      "position": "right background",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": [
+        "front wheel",
+        "handlebar",
+        "rider helmet"
+      ],
+      "hidden_parts": [],
+      "truncated_edges": [],
+      "evidence": "Motorcycle at right background; front wheel and handlebar visible; rider helmet worn by rider.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V7",
+      "class": "car",
+      "position": "right background",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": [
+        "front bumper",
+        "headlight",
+        "license plate"
+      ],
+      "hidden_parts": [],
+      "truncated_edges": [],
+      "evidence": "White car at right background; front bumper, headlight, and license plate visible.",
+      "uncertainty": ""
+    }
+  ],
+  "scene_analysis": {
+    "traffic_density": "high",
+    "lighting": "bright",
+    "road_condition": "unknown"
+  },
+  "possible_detection_difficulties": [
+    {
+      "factor": "crowded scene",
+      "evidence": "Multiple motorcycles and cars are closely packed together, making it difficult to distinguish individual vehicles.",
+      "confidence": "high"
+    }
+  ],
+  "limitations": [],
+  "_validation": {
+    "warnings": [
+      "Repetition: 6 vehicles share identical class='motorcycle', visible_parts=['front wheel', 'handlebar', 'rider helmet'], hidden_parts=[], truncated_edges=[]. This may indicate copy-paste instead of per-vehicle analysis."
+    ],
+    "prompt_file": "prompts\\traffic_analysis_v3_1.txt",
+    "image_file": "images\\crop_test.jpg"
+  }
+}

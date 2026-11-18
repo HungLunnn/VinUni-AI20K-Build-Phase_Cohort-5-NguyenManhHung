@@ -1,0 +1,142 @@
+{
+  "vehicles": [
+    {
+      "object_id": "V1",
+      "class": "motorcycle",
+      "position": "left foreground",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front wheel", "handlebar"],
+      "hidden_parts": ["rear wheel", "seat"],
+      "truncated_edges": ["left"],
+      "evidence": "White motorcycle at left foreground; front wheel and handlebar visible; rear wheel hidden by another motorcycle.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V2",
+      "class": "motorcycle",
+      "position": "center foreground",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front wheel", "handlebar"],
+      "hidden_parts": ["rear wheel", "seat"],
+      "truncated_edges": ["left"],
+      "evidence": "Silver motorcycle at center foreground; front wheel and handlebar visible; rear wheel hidden by another motorcycle.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V3",
+      "class": "motorcycle",
+      "position": "right foreground",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front wheel", "handlebar"],
+      "hidden_parts": ["rear wheel", "seat"],
+      "truncated_edges": ["left"],
+      "evidence": "Red motorcycle at right foreground; front wheel and handlebar visible; rear wheel hidden by another motorcycle.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V4",
+      "class": "motorcycle",
+      "position": "left center",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front wheel", "handlebar"],
+      "hidden_parts": ["rear wheel", "seat"],
+      "truncated_edges": ["left"],
+      "evidence": "Black motorcycle at left center; front wheel and handlebar visible; rear wheel hidden by another motorcycle.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V5",
+      "class": "motorcycle",
+      "position": "center center",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front wheel", "handlebar"],
+      "hidden_parts": ["rear wheel", "seat"],
+      "truncated_edges": ["left"],
+      "evidence": "Silver motorcycle at center center; front wheel and handlebar visible; rear wheel hidden by another motorcycle.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V6",
+      "class": "motorcycle",
+      "position": "right center",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front wheel", "handlebar"],
+      "hidden_parts": ["rear wheel", "seat"],
+      "truncated_edges": ["left"],
+      "evidence": "Red motorcycle at right center; front wheel and handlebar visible; rear wheel hidden by another motorcycle.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V7",
+      "class": "motorcycle",
+      "position": "left background",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front wheel", "handlebar"],
+      "hidden_parts": ["rear wheel", "seat"],
+      "truncated_edges": ["left"],
+      "evidence": "White motorcycle at left background; front wheel and handlebar visible; rear wheel hidden by another motorcycle.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V8",
+      "class": "motorcycle",
+      "position": "center background",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front wheel", "handlebar"],
+      "hidden_parts": ["rear wheel", "seat"],
+      "truncated_edges": ["left"],
+      "evidence": "Silver motorcycle at center background; front wheel and handlebar visible; rear wheel hidden by another motorcycle.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V9",
+      "class": "motorcycle",
+      "position": "right background",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front wheel", "handlebar"],
+      "hidden_parts": ["rear wheel", "seat"],
+      "truncated_edges": ["left"],
+      "evidence": "Red motorcycle at right background; front wheel and handlebar visible; rear wheel hidden by another motorcycle.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V10",
+      "class": "car",
+      "position": "right foreground",
+      "visibility_status": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front wheel", "headlight"],
+      "hidden_parts": ["rear wheel", "license plate"],
+      "truncated_edges": ["right"],
+      "evidence": "White car at right foreground; front wheel and headlight visible; rear wheel and license plate hidden by another car.",
+      "uncertainty": ""
+    }
+  ],
+  "scene_analysis": {
+    "traffic_density": "high",
+    "lighting": "bright",
+    "road_condition": "unknown"
+  },
+  "possible_detection_difficulties": [
+    {
+      "factor": "occlusion",
+      "evidence": "Some motorcycles are partially occluded by other motorcycles.",
+      "confidence": "medium"
+    },
+    {
+      "factor": "truncation",
+      "evidence": "Some motorcycles are truncated by the image boundaries.",
+      "confidence": "medium"
+    }
+  ],
+  "limitations": []
+}

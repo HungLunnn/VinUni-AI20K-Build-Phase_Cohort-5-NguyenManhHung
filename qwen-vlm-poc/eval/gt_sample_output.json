@@ -1,0 +1,58 @@
+[
+  {
+    "image": "val_image_001.jpg",
+    "vehicles": [
+      {
+        "object_id": "val_image_001.jpg_car_1",
+        "class": "car",
+        "position": "right foreground",
+        "visibility": "truncated_by_boundary"
+      },
+      {
+        "object_id": "val_image_001.jpg_motor_2",
+        "class": "motor",
+        "position": "left foreground",
+        "visibility": "fully_visible"
+      },
+      {
+        "object_id": "val_image_001.jpg_motor_3",
+        "class": "motor",
+        "position": "center foreground",
+        "visibility": "partially_occluded"
+      },
+      {
+        "object_id": "val_image_001.jpg_bus_4",
+        "class": "bus",
+        "position": "center middle",
+        "visibility": "fully_visible"
+      }
+    ],
+    "scene": {
+      "traffic_density": "unknown",
+      "lighting": "bright",
+      "weather": "clear"
+    }
+  },
+  {
+    "image": "val_image_002.jpg",
+    "vehicles": [
+      {
+        "object_id": "val_image_002.jpg_car_10",
+        "class": "car",
+        "position": "left foreground",
+        "visibility": "truncated_by_boundary"
+      },
+      {
+        "object_id": "val_image_002.jpg_motor_11",
+        "class": "motor",
+        "position": "right foreground",
+        "visibility": "truncated_by_boundary"
+      }
+    ],
+    "scene": {
+      "traffic_density": "unknown",
+      "lighting": "dark",
+      "weather": "cloudy"
+    }
+  }
+]

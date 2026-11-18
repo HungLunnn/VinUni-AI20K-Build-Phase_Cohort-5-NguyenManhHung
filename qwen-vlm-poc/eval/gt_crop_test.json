@@ -1,0 +1,34 @@
+{
+  "image": "crop_test.jpg",
+  "vehicles": [
+    {
+      "object_id": "V1",
+      "class": "motorcycle",
+      "position": "left foreground",
+      "visibility": "fully_visible"
+    },
+    {
+      "object_id": "V2",
+      "class": "motorcycle",
+      "position": "center foreground",
+      "visibility": "partially_occluded"
+    },
+    {
+      "object_id": "V3",
+      "class": "car",
+      "position": "right foreground",
+      "visibility": "truncated_by_boundary"
+    },
+    {
+      "object_id": "V4",
+      "class": "motorcycle",
+      "position": "right background",
+      "visibility": "partially_occluded"
+    }
+  ],
+  "scene": {
+    "traffic_density": "high",
+    "lighting": "bright",
+    "weather": "clear"
+  }
+}

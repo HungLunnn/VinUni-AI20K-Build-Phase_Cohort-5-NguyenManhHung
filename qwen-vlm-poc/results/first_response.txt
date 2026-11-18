@@ -1,0 +1,74 @@
+```json
+{
+  "vehicles": [
+    {
+      "object_id": "V1",
+      "class": "motorcycle",
+      "position": "left",
+      "visibility": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front", "side"],
+      "hidden_parts": [],
+      "evidence": "Motorcycle with rider wearing a helmet and raincoat, visible in the left lane.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V2",
+      "class": "motorcycle",
+      "position": "center",
+      "visibility": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front", "side"],
+      "hidden_parts": [],
+      "evidence": "Motorcycle with rider wearing a helmet and raincoat, visible in the center lane.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V3",
+      "class": "motorcycle",
+      "position": "right",
+      "visibility": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front", "side"],
+      "hidden_parts": [],
+      "evidence": "Motorcycle with rider wearing a helmet and raincoat, visible in the right lane.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V4",
+      "class": "car",
+      "position": "right",
+      "visibility": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front", "side"],
+      "hidden_parts": [],
+      "evidence": "Car waiting at the traffic light, visible in the right lane.",
+      "uncertainty": ""
+    },
+    {
+      "object_id": "V5",
+      "class": "bus",
+      "position": "left",
+      "visibility": "fully_visible",
+      "occluder": null,
+      "visible_parts": ["front"],
+      "hidden_parts": ["side"],
+      "evidence": "Green bus waiting at the traffic light, visible in the left lane.",
+      "uncertainty": ""
+    }
+  ],
+  "scene_analysis": {
+    "traffic_density": "moderate",
+    "lighting": "overcast",
+    "road_condition": "wet"
+  },
+  "possible_detection_difficulties": [
+    {
+      "factor": "rain",
+      "evidence": "Wet road surface and overcast sky, reducing visibility.",
+      "confidence": "medium"
+    }
+  ],
+  "limitations": []
+}
+```

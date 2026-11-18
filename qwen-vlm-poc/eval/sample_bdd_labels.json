@@ -1,0 +1,64 @@
+[
+  {
+    "name": "val_image_001.jpg",
+    "attributes": {
+      "weather": "clear",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "labels": [
+      {
+        "id": 1,
+        "category": "car",
+        "box2d": {"x1": 850, "y1": 400, "x2": 1000, "y2": 600},
+        "attributes": {"occluded": false, "truncated": true}
+      },
+      {
+        "id": 2,
+        "category": "motor",
+        "box2d": {"x1": 100, "y1": 450, "x2": 250, "y2": 650},
+        "attributes": {"occluded": false, "truncated": false}
+      },
+      {
+        "id": 3,
+        "category": "motor",
+        "box2d": {"x1": 400, "y1": 420, "x2": 550, "y2": 620},
+        "attributes": {"occluded": true, "truncated": false}
+      },
+      {
+        "id": 4,
+        "category": "bus",
+        "box2d": {"x1": 600, "y1": 300, "x2": 800, "y2": 500},
+        "attributes": {"occluded": false, "truncated": false}
+      },
+      {
+        "id": 5,
+        "category": "person",
+        "box2d": {"x1": 300, "y1": 400, "x2": 350, "y2": 500},
+        "attributes": {"occluded": false, "truncated": false}
+      }
+    ]
+  },
+  {
+    "name": "val_image_002.jpg",
+    "attributes": {
+      "weather": "rainy",
+      "timeofday": "night",
+      "scene": "city street"
+    },
+    "labels": [
+      {
+        "id": 10,
+        "category": "car",
+        "box2d": {"x1": 50, "y1": 350, "x2": 300, "y2": 550},
+        "attributes": {"occluded": true, "truncated": true}
+      },
+      {
+        "id": 11,
+        "category": "motor",
+        "box2d": {"x1": 900, "y1": 400, "x2": 1050, "y2": 650},
+        "attributes": {"occluded": false, "truncated": true}
+      }
+    ]
+  }
+]
