@@ -23,10 +23,6 @@ Tất cả các gói trong `requirements.txt` đã được cài thành công:
 | python-dotenv | 1.2.4 | Đọc file `.env` |
 | huggingface_hub | 2.4.0 | Tải dataset từ HuggingFace |
 
-Lỗi ban đầu `ModuleNotFoundError: No module named 'PIL'` đã được khắc phục bằng lệnh:
-```
-pip install -r requirements.txt
-```
 
 ### 2.2 Biến môi trường
 
