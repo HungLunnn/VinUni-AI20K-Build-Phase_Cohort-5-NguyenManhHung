@@ -1,9 +1,5 @@
 # BÁO CÁO DỰ ÁN: Qwen2.5-VL cho Detection Doctor (Thí nghiệm khả thi)
 
-**Ngày báo cáo:** 18/11/2026  
-**Thư mục làm việc:** `qwen-vlm-poc/`  
-**Người thực hiện:** Cline (AI Coding Agent)
-
 ---
 
 ## 1. Mục tiêu dự án
